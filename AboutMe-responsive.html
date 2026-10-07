@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Biodata (Responsive)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1>Student Biodata</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#academic">Academic Record</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+          <li><a href="index.html">Back to Home</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- PROFILE: Grid 2 kolom (foto + teks), jadi 1 kolom di layar kecil -->
+    <section id="profile" class="section">
+      <h2>Student Profile</h2>
+      <div class="profile-grid">
+        <img src="aldi.jpeg" alt="Student profile photo" width="150">
+        <div>
+          <p>
+            Halo, nama saya Rocky Aldi Abadi Bangun, mahasiswa di Universitas Advent Indonesia.
+            Saya kuliah di program studi Sistem Informasi, Fakultas Teknologi Informasi.
+          </p>
+          <p>
+            Halaman ini dibuat sebagai bagian dari tugas praktikum Web Programming I
+            untuk mempelajari desain website yang responsif.
+          </p>
+          <h3>Personal Information</h3>
+          <p><strong>Name:</strong> Rocky Aldi Abadi Bangun</p>
+          <p><strong>Student ID (NIM):</strong> 2582015</p>
+          <p><strong>Study Program:</strong> Information Systems</p>
+          <p><strong>Email:</strong> <a href="mailto:2582015@unai.edu">2582015@unai.edu</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOBBIES: Grid 2 kolom, jadi 1 kolom di layar kecil -->
+    <section id="hobbies" class="section">
+      <h2>My Hobbies</h2>
+      <div class="hobby-grid">
+        <div class="card">
+          <h3>My Favorite Hobbies</h3>
+          <ol>
+            <li>Catur</li>
+            <li>Tidur</li>
+            <li>Main</li>
+          </ol>
+        </div>
+        <div class="card">
+          <h3>Other Activities I Enjoy</h3>
+          <ul>
+            <li>Dengar Musik</li>
+            <li>Nonton film</li>
+            <li>Nongkrong</li>
+            <li>Berenang</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACADEMIC: tabel dibungkus agar bisa di-scroll di layar kecil -->
+    <section id="academic" class="section">
+      <h2>Academic Record</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Semester</th>
+              <th>Academic Year</th>
+              <th>GPA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Odd Semester</td><td>2025/2026</td><td>3.60</td></tr>
+            <tr><td>2</td><td>Even Semester</td><td>2025/2026</td><td>3.40</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form class="contact-form" action="#" method="post">
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname"><br><br>
+
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="category">Message Category:</label><br>
+  <select id="category" name="category">
+    <option value="">-- Select Category --</option>
+    <option value="academic">Academic</option>
+    <option value="project">Project Collaboration</option>
+    <option value="general">General</option>
+  </select><br><br>
+
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+
+  <button type="submit">Send Message</button>
+
+</form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER: Flexbox, bertumpuk di layar kecil -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Rocky Aldi Abadi Bangun | Web Programming I</p>
+      <p>Faculty of Information Technology<br>Universitas Advent Indonesia</p>
+    </div>
+  </footer>
+
+</body>
+</html>
